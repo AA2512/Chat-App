@@ -35,9 +35,11 @@ const autoScroll = () => {
   //How far I have scrolled
   const scrollOffset = messageDiv.scrollTop + visibleHeight;
 
-  if (containerHeight - newMessageHeight <= scrollOffset) {
-    messageDiv.scrollTop = messageDiv.scrollHeight;
-  }
+  messageDiv.scrollTop = messageDiv.scrollHeight;
+
+  // if (containerHeight - newMessageHeight <= scrollOffset) {
+
+  // }
 
   // console.log(newMessageHeight);
 };
